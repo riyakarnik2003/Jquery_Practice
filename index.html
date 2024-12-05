@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        //     $('button').click(()=>{
+        //     $('#first').hide()
+
+        //     $('#btn').click(()=>{
+        //         $('#demo').hide()
+        //     })
+        // })
+        // })
+
+        //Hiding HTML element
+
+    //   $(document).ready(function(){
+    //     $("h1").click(function(){
+    //         $(this).hide()
+    //     })
+    //   })
+
+        //Showing HTML element
+
+        $(document).ready(()=>{
+            $('.hideme').click(()=>{
+                $("p").hide()
+            })
+
+            $('.showme').click(()=>{
+                $("p").show()
+            })
+        })
+           
+        //Toggling an element
+
+        $(document).ready(()=>{
+            $("h1").click(()=>{
+                $("p").toggle()
+            })
+        })
+       
+
+       
+    </script>
+</head>
+<body>
+    <!-- <h1>Studyopedia</h1>
+    <h2>JQuery Selectors</h2>
+    <p>Never stop learning</p>
+    <div id="first">
+        <p>Quizzes</p>
+        <p>Don't Settle</p>
+    </div>
+
+    <div id="demo">
+        <p>Free Tutorials</p>
+        <p>Jquery helps to ease javascript code</p>
+    </div>
+
+    <button>Hide the elements</button>
+    <button id="btn">Hide the elements with a particular id</button> -->
+
+    <!-- <h1 class="hideme">Hide Me!</h1>
+    <h1 class="showme">Show Me!</h1>
+    <p>This is a demo text</p> -->
+
+    <h1>Toggle here!</h1>
+    <p>This is toggling text</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("button").click(()=>{
+                // $("#div1").fadeIn()
+                // $("#div2").fadeIn("slow")
+                // $("#div3").fadeIn(2000)
+                // $("#div4").fadeIn("fast")
+
+                // $("#div1").fadeOut()
+                // $("#div2").fadeOut("slow")
+                // $("#div3").fadeOut(2000)
+                // $("#div4").fadeOut("fast")
+
+                $("#div1").fadeToggle()
+                $("#div2").fadeToggle("slow")
+                $("#div3").fadeToggle(2000)
+                $("#div4").fadeToggle("fast")
+            })
+        })
+    </script>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        /* display: none; */
+
+    }
+
+    #div1{
+        background-color: pink;
+    }
+    #div2{
+        background-color: lightgreen;
+    }
+    #div3{
+        background-color: lightskyblue;
+    }
+    #div4{
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <!-- Fading Effects -->
+<button>Click the button to see the fading effects</button>
+<div id="div1">Div1</div>
+<div id="div2">Div2</div>
+<div id="div3">Div3</div>
+<div id="div4">Div4</div>
+
+</body>
+</html>

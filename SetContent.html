@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("#btn1").click(()=>{
+                $("p").text("This is a demo text")
+            })
+
+            $("#btn2").click(()=>{
+                $("p").html("This is a <strong>demo</strong> text")
+            })
+        })
+    </script>
+
+</head>
+<style>
+    p{
+        background-color: black;
+        color: white;
+        font-size: 25px;
+    }
+</style>
+<body>
+
+    <p id="demo">Click the button to set HTML and TEXT</p>
+    <button id="btn1">TEXT</button>
+    <button id="btn2">HTML</button>
+</body>
+</html>

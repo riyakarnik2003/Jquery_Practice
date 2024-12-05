@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            // $("#div").click(()=>{
+            //     $("#slide").slideDown("fast")
+            // })
+
+            // $("#div").click(()=>{
+            //     $("#slide").slideUp("slow")
+            // })
+
+            $("#div").click(()=>{
+                $("#slide").slideToggle("slow")
+            })
+        })
+    </script>
+</head>
+<style>
+    #div,#slide{
+        padding: 15px;
+        text-align: center;
+        font-size: 25px;
+        background-color: lightgreen;
+        border: 1px solid black;
+    }
+
+    #slide{
+        /* display: none; */
+        font-size: 15px;
+    }
+
+    
+</style>
+<body>
+
+    <!-- Sliding Effects -->
+
+
+    <!-- <div id="div">Click here to slide down!</div>
+    <div id="slide">Wohooo!! It's Sliding</div> -->
+
+    <!-- <div id="div">Click here to slide up!</div>
+    <div id="slide">Wohooo!! It's Sliding</div> -->
+
+    <div id="div">Click here to see the toggling effect!</div>
+    <div id="slide">Wohooo!! It's Sliding</div>
+</body>
+</html>

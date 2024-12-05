@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("#textCont").click(()=>{
+                alert($("#demo").text())
+            })
+
+            $("#HTMLCont").click(()=>{
+                alert($("#demo").html())
+            })
+        })
+    </script>
+</head>
+<body>
+    <p id="demo" style="display: none;">This is a <i>demo text.</i> <strong>This is another demo text</strong></p>
+    <p>Click this button to get text and html content of the paragraph</p>
+
+    <button id="textCont">Text</button>
+    <button id="HTMLCont">HTML</button>
+    
+</body>
+</html>

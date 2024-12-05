@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("#btn").click(()=>{
+                // $("h1").append("<em> Event</em>")
+                // $("h1").after("<p>It is the best part</p>")
+                // $("h1").prepend("<em>It is </em>")
+                // $("h1").before("<p>05-12-2024</p>")
+
+               
+            })
+
+            $(document).ready(()=>{
+                $("#btn1").click(()=>{
+                    $("h1,h2").addClass("demo")
+                  
+                })
+
+                $("#btn2").click(()=>{
+                   
+                    $("h1,h2").removeClass("demo")
+                })
+
+                $("#btn3").click(()=>{
+                   
+                   $("h1,h2").toggleClass("demo")
+               })
+            })
+        })
+    </script>
+
+    <style>
+        .demo{
+            background-color: lightseagreen;
+            color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fun Friday</h1>
+    <p>Today is fun Friday...Yayy! ❤😍</p>
+    <h2>It's a busy day today!</h2>
+    <p>Lorem ipsum dolor sit.</p>
+    <button id="btn">Click me to append any word</button>
+    <button id="btn1">Add class</button>
+    <button id="btn2">Remove class</button>
+    <button id="btn3">Toggle class</button>
+</body>
+</html>
